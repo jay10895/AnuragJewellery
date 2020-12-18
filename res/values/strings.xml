@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">AnuragJewellery</string>
+    <string name="nal_salesman">Salesman</string>
+    <string name="nal_manufacture">Manufacture</string>
+    <string name="string_login">Login</string>
+    <string name="lay_login_remember_me">Remember Me</string>
+    <string name="lay_login_forgot_password">Forgot Password?</string>
+    <string name="invalid_user">Please Enter Valid Username</string>
+    <string name="invalid_password">Please Enter Correct Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_header_desc">Navigation Header</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="nav_profle">Profile</string>
+    <string name="nav_registration">Registration</string>
+    <string name="nav_new_party">New Party</string>
+    <string name="nav_new_salesentry">New Sales Entry</string>
+    <string name="action_logout">Logout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="register">Register</string>
+    <string name="login_password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="new_Party_name">Name</string>
+    <string name="new_party_mobile">Mobile</string>
+    <string name="new_party_salesman">Salesman</string>
+    <string name="new_party_city">City</string>
+    <string name="sales_payment">Payment</string>
+    <string name="sales_debit">Debit</string>
+    <string name="sales_credit">Credit</string>
+    <string name="sales_salesman">Salesman</string>
+    <string name="sales_sr_no">Sr.No</string>
+    <string name="sales_hint_search">Search</string>
+    <string name="txt_balance">Balance</string>
+    <string name="txt_debit">Debit</string>
+    <string name="txt_credit">Credit</string>
+    <string name="txt_to">To</string>
+    <string name="txt_from">From</string>
+    <string name="salesman_btn_print">Print</string>
+    <string name="salesman_payment">Payment</string>
+    <string name="salesman_fine">Fine</string>
+    <string name="salesman_weight">Weight</string>
+    <string name="salesman_jewelers">Jewellers</string>
+    <string name="salesman_sr_no">Sr.no</string>
+    <string name="user">please fill the username box</string>
+    <string name="invalid_pass">please enter minimum 8 letter password</string>
+    <string name="invalid_number">Please enter phone number</string>
+    <string name="invalid_username">Field can\'t be empty</string>
+    <string name="invalid_confirm_password">Password does not match</string>
+    <string name="contact">Contact</string>
+
+    <string name="bottom_sheet_option_camera">Camera</string>
+    <string name="bottom_sheet_option_gallery">Gallery</string>
+
+    <string name="bottom_sheet_option_heading">Select %1$s</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Profile</item>
+        <item>Registration</item>
+        <item>NewParty</item>
+        <item>NewSalesEntry</item>
+
+    </string-array>
+
+</resources>
