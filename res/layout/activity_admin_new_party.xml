@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AdminNewPartyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/back_arrow_one"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:src="@drawable/ic_arrow_back_24dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Party Entry"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal"
+            android:layout_marginTop="@dimen/_11sdp"/>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/vepari_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:drawableEnd="@drawable/ic_person_outline_black_24dp"
+        android:hint="@string/new_Party_name"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:id="@+id/vepari_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:hint="@string/new_party_mobile"
+        android:inputType="number"
+        android:maxLength="10"
+        android:drawableEnd="@drawable/ic_smartphone_black_24dp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/role_new_party"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_1sdp">
+
+        <Spinner
+            android:id="@+id/spinner_new_party"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:backgroundTint="#000"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="@color/colorPrimary"/>
+
+
+    <EditText
+        android:id="@+id/vepari_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_party_city"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+
+    <!--<Button
+        android:id="@+id/vepari_submit_button"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@color/colorPrimary"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_13sdp"
+        android:onClick="ConfirmButton"/>-->
+
+    <Button
+        android:id="@+id/vepari_submit_button"
+        style="@style/loginButton"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:layout_marginTop="@dimen/_8sdp"
+        />
+</LinearLayout>
