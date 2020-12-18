@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">80dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    
+
+
+    <dimen name="headerTextSize">22sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginCardRadius">20dp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+
+    <dimen name="signup_text_margin_top">10dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="text_20">20dp</dimen>
+    <dimen name="text_16">16dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="pad_15">15dp</dimen>
+    <dimen name="pad_20">20dp</dimen>
+    <dimen name="size_48">48sp</dimen>
+
+</resources>
