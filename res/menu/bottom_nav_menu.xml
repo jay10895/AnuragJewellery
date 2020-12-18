@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/nal_salesman"
+        android:id="@+id/salesman"
+        android:icon="@drawable/home"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="@string/nal_manufacture"
+        android:id="@+id/manufacture"
+        android:icon="@drawable/bookmark"
+        android:menuCategory="secondary"/>
+
+</menu>
