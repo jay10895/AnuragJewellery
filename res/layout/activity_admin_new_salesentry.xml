@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AdminNewSalesentryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_13sdp">
+
+                <RadioButton
+                    android:id="@+id/sale_vepari_cr"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Credit"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:textColorHighlight="#000000"/>
+
+                <View
+                    android:layout_width="@dimen/_3sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="#c0c0c0"/>
+
+                <RadioButton
+                    android:id="@+id/sale_vepari_dr"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Debit"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:layout_marginEnd="@dimen/_50sdp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:layout_marginRight="@dimen/_9sdp"
+            android:background="#c0c0c0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_13sdp">
+
+
+        <EditText
+            android:id="@+id/sales_date_in"
+            style="@style/modifiedEditText"
+            android:hint="Date"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:textColorHighlight="#000000"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/new_sales_spin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_sales"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#000" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:background="@color/colorPrimary"/>
+
+
+        <RelativeLayout
+            android:id="@+id/new_sales_spinn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_sales_customer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#000" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:background="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/sale_vepari_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textSize="@dimen/_15sdp"
+            android:textColorHighlight="#000000"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"/>
+
+        <EditText
+            android:id="@+id/sale_vepari_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight"
+            android:layout_below="@id/sale_vepari_description"
+            android:textSize="@dimen/_15sdp"
+            android:textColorHighlight="#000000"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"/>
+
+        <EditText
+            android:id="@+id/sale_vepari_touch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Touch"
+            android:layout_below="@id/sale_vepari_weight"
+            android:textSize="@dimen/_15sdp"
+            android:textColorHighlight="@android:color/black"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"/>
+
+        <EditText
+            android:id="@+id/sale_vepari_fine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fine"
+            android:layout_below="@id/sale_vepari_touch"
+            android:textSize="@dimen/_15sdp"
+            android:textColorHighlight="#000000"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"/>
+
+        <EditText
+            android:id="@+id/sale_vepari_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Payment"
+            android:layout_below="@id/sale_vepari_fine"
+            android:textSize="@dimen/_15sdp"
+            android:textColorHighlight="#000000"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/sale_vepari_payment">
+
+            <ImageView
+                android:id="@+id/sale_vepari_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/ic_face_black_24dp"/>
+
+            <Button
+                android:id="@+id/sale_vepari_button"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@color/colorPrimary"
+                android:text="Submit"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="@dimen/_28sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_50sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
