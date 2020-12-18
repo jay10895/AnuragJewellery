@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context=".admin.AdminSalesmanVepariListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/salesman_appbar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/salesman_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title=""
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/salesman_vepari_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/salesman_btn_print"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="end"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/salesman_vepari_btnfromdate"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_width="@dimen/_115sdp"
+                    android:background="@android:color/white"
+                    android:text="@string/txt_from"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="TO"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_11sdp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/salesman_vepari_btntodate"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_width="@dimen/_115sdp"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:background="@android:color/white"
+                    android:text="@string/txt_to"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="@string/txt_credit"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:id="@+id/salesman_vepari_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#051416"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+            </View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="@string/txt_debit"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:id="@+id/salesman_vepari_debit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+            </View>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:text="@string/txt_balance"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:id="@+id/salesman_vepari_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/vepari_Pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/salesman_select_dealer_or_not"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/salesman_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/salesman_sr_no"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/_minus11sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/salesman_owner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/salesman_jewelers"
+                            android:layout_marginStart="@dimen/_minus10sdp"
+                            android:layout_marginEnd="@dimen/_minus10sdp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_13sdp"
+                            />
+                        <TextView
+                            android:id="@+id/salesman_weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/salesman_weight"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_minus1sdp"
+                            android:layout_marginEnd="@dimen/_minus15sdp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_13sdp"
+                            />
+
+                        <TextView
+                            android:id="@+id/salesman_fine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/salesman_fine"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/_minus5sdp"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:layout_gravity="center|right"
+                            android:gravity="center|right"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_13sdp" />
+                        <TextView
+                            android:id="@+id/salesman_payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/salesman_payment"
+                            android:layout_marginStart="@dimen/_minus5sdp"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:layout_gravity="center|right"
+                            android:gravity="center|right"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/salesman_vepari_recycleview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:elevation="@dimen/_4sdp">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
