@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/_20sdp">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="Salesman Details"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userid"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/_10sdp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_userid"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/_14sdp"
+                android:hint="Userid"
+                android:drawableEnd="@drawable/ic_person_outline_black_24dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/_10sdp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_username"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="@dimen/_14sdp"
+                android:hint="Username"
+                android:drawableEnd="@drawable/ic_person_outline_black_24dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile"
+            style="@style/parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_mobile"
+                style="@style/modifiedEditText"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textSize="@dimen/_14sdp"
+                android:maxLength="10"
+                android:hint="Phone Number"
+                android:drawableEnd="@drawable/ic_smartphone_black_24dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            style="@style/parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_email"
+                style="@style/modifiedEditText"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textSize="@dimen/_14sdp"
+                android:hint="Email"
+                android:drawableEnd="@drawable/ic_mail_outline_black_24dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/edit_btn"
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:text="Edit"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <Button
+                android:id="@+id/delete_btn"
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:text="Delete"
+                android:layout_marginTop="@dimen/_8sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
